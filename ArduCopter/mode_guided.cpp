@@ -670,9 +670,9 @@ void ModeGuided::takeoff_run()
 // called from guided_run
 void ModeGuided::pos_control_run()
 {
-    // if not armed set throttle to zero and exit immediately
+    // if not armed set throttle to zero and exit immediately 如果未启用，则将油门设置为零并立即退出
     if (is_disarmed_or_landed()) {
-        // do not spool down tradheli when on the ground with motor interlock enabled
+        // do not spool down tradheli when on the ground with motor interlock enabled 判断电机是否解锁
         make_safe_ground_handling(copter.is_tradheli() && motors->get_interlock());
         return;
     }
