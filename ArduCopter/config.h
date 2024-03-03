@@ -241,6 +241,12 @@
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
+//五角星
+#ifndef MODE_DRAWSTAR_ENABLED
+# define MODE_DRAWSTAR_ENABLED DISABLED
+#endif
+
+//////////////////////////////////////////////////////////////////////////////
 // System ID - conduct system identification tests on vehicle
 #ifndef MODE_SYSTEMID_ENABLED
 # define MODE_SYSTEMID_ENABLED !HAL_MINIMIZE_FEATURES

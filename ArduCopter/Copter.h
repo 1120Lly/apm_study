@@ -1023,6 +1023,9 @@ private:
 #if MODE_TURTLE_ENABLED == ENABLED
     ModeTurtle mode_turtle;
 #endif
+#if MODE_DRAWSTAR_ENABLED == ENABLED
+    ModeTurtle mode_drawstar;
+#endif
 
     // mode.cpp
     Mode *mode_from_mode_num(const Mode::Number mode);
